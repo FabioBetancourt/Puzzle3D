@@ -1,0 +1,85 @@
+{
+    "name": "MapControlls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "326c8917-5de0-48bf-8b3e-9922ab1b046e",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "11992ac3-25ff-40b1-92ba-df2f58eaf10b",
+                    "expectedControlType": "Button",
+                    "processors": "InvertVector2",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Drag",
+                    "type": "Button",
+                    "id": "fa0a7bac-838d-42c9-98ce-54e2411d5d64",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SelectRing",
+                    "type": "Button",
+                    "id": "9f79f788-63ea-49a2-b809-c5866bad955c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fbfd32e2-7e74-4809-90a2-a8b04cdb2ff6",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press,Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "29334fa7-b13f-49ae-9353-da90943055dc",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "Scale(factor=-1)",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7053a3e4-491f-497f-81ca-5debfc58ed66",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74544421-9211-42aa-842c-d6e9a8ff9907",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectRing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
